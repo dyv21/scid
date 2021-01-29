@@ -1,0 +1,40 @@
+.box {
+  display: none;
+
+  @media (max-width: @tablet-width-only) {
+    height: 98px;
+    padding-top: 25px;
+    background-color: @white-smoke;
+    display: flex;
+    justify-content: space-between;
+
+    &::after {
+      display: block;
+      content: "";
+      width: 44px;
+      height: 44px;
+      background-color: @silver;
+    }
+  }
+}
+
+.box__wrapper {
+  width: 91.2%;
+  height: 44px;
+  background-color: @white;
+  display: flex;
+  justify-content: space-between;
+
+  &::before,
+  &::after {
+    display: block;
+    content: "";
+    width: 44px;
+    height: 44px;
+    background-color: @silver;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    width: 73.88%;
+  }
+}

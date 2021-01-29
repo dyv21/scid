@@ -1,0 +1,17 @@
+.promo {
+  background: @navy-blue url("../img/banner.jpg") no-repeat;
+  height: 319px;
+
+  @media (max-width: @tablet-width-only) {
+    background: @canary-50;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    height: 224px;
+    background: @canary-50 url("../img/banner-360.jpg") no-repeat center top / cover;
+  }
+
+  @media (max-width: 414px) {
+    height: 258px;
+  }
+}

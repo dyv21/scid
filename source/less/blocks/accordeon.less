@@ -1,0 +1,32 @@
+@media (max-width: @tablet-width-only) {
+  .accordeon__item {
+    background: transparent;
+  }
+
+  .accordeon__item-title {
+    background: @silver;
+  }
+
+  .accordeon-content {
+    background: @silver;
+    display: none;
+  }
+
+  .accordeon-content--active {
+    .accordeon-content {
+      display: block;
+      animation: open 0.5s ease-out;
+      background: @white-smoke-two;
+    }
+
+    @keyframes open {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}

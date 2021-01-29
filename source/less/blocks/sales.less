@@ -1,0 +1,31 @@
+.sales {
+  .block;
+}
+
+.sales__title {
+  .title;
+
+  @media (max-width: @tablet-width-only) {
+    margin: 0;
+    padding: 11px 0 10px 22px;
+  }
+}
+
+.sales__content {
+  padding: 10px 22px;
+}
+
+.sales__text {
+  margin: 0;
+  padding: 10px 0;
+}
+
+@media (max-width: @tablet-width-only) {
+  .accordeon-content--active {
+    .sales__title {
+      background-color: @white-smoke-two;
+      color: @navy-blue;
+      font-weight: bold;
+    }
+  }
+}

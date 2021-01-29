@@ -1,0 +1,35 @@
+.block-3 {
+  .block;
+
+  @media (max-width: @tablet-width-only) {
+    margin-bottom: 0;
+  }
+}
+
+.block-3__title {
+  .title;
+
+  @media (max-width: @tablet-width-only) {
+    margin: 0;
+    padding: 11px 0 10px 22px;
+  }
+}
+
+.block-3__content {
+  padding: 10px 22px;
+}
+
+.block-3__text {
+  margin: 0;
+  padding: 10px 0;
+}
+
+@media (max-width: @tablet-width-only) {
+  .accordeon-content--active {
+    .block__title {
+      background-color: @white-smoke-two;
+      color: @navy-blue;
+      font-weight: bold;
+    }
+  }
+}
