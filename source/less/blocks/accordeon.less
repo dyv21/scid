@@ -1,11 +1,19 @@
 @media (max-width: @tablet-width-only) {
   .accordeon__item {
     background: transparent;
-    cursor: pointer;
+
   }
 
   .accordeon__item-title {
     background: @silver;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active {
+      opacity: 0.5;
+    }
   }
 
   .accordeon-content {
