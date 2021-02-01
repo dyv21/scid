@@ -19,11 +19,26 @@
 .main__head {
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  @media (max-width: @tablet-width-only) {
+    margin-bottom: 0px;
+  }
 
   @media (max-width: @mobile-width-only) {
     flex-direction: column;
+    margin-bottom: 15px;
   }
 }
+
+.main__promo {
+  @media (max-width: @mobile-width-only) {
+
+    margin-bottom: 20px;
+  }
+}
+
 
 .main__info,
 .main__sales {
